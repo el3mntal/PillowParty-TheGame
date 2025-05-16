@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
 
@@ -13,6 +14,8 @@ public class controlPersonaje : MonoBehaviour
     private CharacterController controladorPersonaje;
     private Vector3 movimientoDireccion;
     private float gravedad = 100f;
+    //variable para acceder al script de MenuPausa
+    public MenuPausa PausaC;
 
     //Trampolin
     private float fuerzaTrampolin = 250f;
@@ -37,6 +40,12 @@ public class controlPersonaje : MonoBehaviour
     //Metodo Personaje
     void MoverPersonaje()
     {
+        //condicional para detener el personaje
+        if (PausaC.Pausa == true)
+        {
+            return;
+        }
+
         inputHorizontal = Input.GetAxisRaw("Horizontal");
 
         movimientoDireccion.z = inputHorizontal * velocidad;
