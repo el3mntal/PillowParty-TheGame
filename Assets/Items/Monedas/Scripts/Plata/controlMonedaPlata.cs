@@ -12,7 +12,8 @@ public class controlMonedaPlata : MonoBehaviour
     void Start()
     {
         animacionMoneda = this.GetComponent<Animator>();
-        antiguaPosicionMoneda = transform.position;
+        antiguaPosicionMoneda = transform.localPosition; // Guardar la posición local
+        //antiguaPosicionMoneda = transform.position;
     }
     // Update is called once per frame
     void Update()

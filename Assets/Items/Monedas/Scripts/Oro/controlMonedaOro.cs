@@ -12,7 +12,8 @@ public class controlMonedaOro : MonoBehaviour
     void Start()
     {
         animacionMoneda = this.GetComponent<Animator>();
-        antiguaPosicionMoneda = transform.position;
+        antiguaPosicionMoneda = transform.localPosition;
+        //antiguaPosicionMoneda = transform.position;
     }
     // Update is called once per frame
     void Update()

@@ -23,7 +23,8 @@ public class corrutinaMonedaCobre : MonoBehaviour
         Debug.Log("Esperando para reaparecer la moneda...");
         yield return new WaitForSeconds(esperaReaparecerMoneda);
 
-        moneda.transform.position = posicion;
+        moneda.transform.localPosition = posicion;
+        //moneda.transform.position = posicion;
         moneda.SetActive(true);
         Debug.Log("¡Moneda reaparecida!");
     }
