@@ -66,12 +66,19 @@ public class controlPersonaje : MonoBehaviour
             //animacionPersonaje.SetBool("Aterrizar", false);
         }
 
-        if (controladorPersonaje
-        .isGrounded && inputHorizontal != 0)
+        if (controladorPersonaje.isGrounded && inputHorizontal != 0)
         {
             animacionPersonaje.SetBool("Aterrizar", true);
         }
+
         controladorPersonaje.Move(movimientoDireccion * Time.deltaTime);
+
+        //LIMITACION DE PERSONAJE
+        Vector3 posicionRestringida = transform.position;
+        posicionRestringida.z = Mathf.Clamp(posicionRestringida.z, -333f, 333f);
+        posicionRestringida.y = Mathf.Clamp(posicionRestringida.y, 155f, 516f);
+        transform.position = posicionRestringida;
+
         Debug.Log("Ejecucion del movimeinto horizontal");
     }
 
