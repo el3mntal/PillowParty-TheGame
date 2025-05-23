@@ -27,7 +27,7 @@ public class controlMonedaPlata : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             //llamado del script ContadorMoneda por medio de su instancia para ejecutar el metodo incrementar moneda
-            contadorMonedasGeneral.instanciaContadorGeneral.IncrementarMoneda(5);
+            contadorMonedasGeneral.instanciaContadorGeneral.IncrementarMoneda(2);
 
             // Desactivar la moneda y pedir al administrador que la reaparezca
             this.gameObject.SetActive(false);
