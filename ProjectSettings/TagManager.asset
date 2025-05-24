@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Trampolin
+  - moneda dorada
   layers:
   - Default
   - TransparentFX
