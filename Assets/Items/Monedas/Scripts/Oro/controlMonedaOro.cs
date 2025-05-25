@@ -26,6 +26,26 @@ public class controlMonedaOro : MonoBehaviour
         //comprobacion de colision unicamente con objeto con tag Player
         if (other.CompareTag("Player"))
         {
+
+
+
+
+            //COPILOT: Obtener el script del personaje y aumentar su contador de plata
+            ContadorMonedasIndividuales contadorIndividual = other.GetComponent<ContadorMonedasIndividuales>();
+            if (contadorIndividual != null)
+            {
+                contadorIndividual.IncrementarMoneda("Plata");
+            }
+            /*
+                //COPILOT: Obtener el script del personaje y aumentar su contador de cobre
+                ContadorMonedasIndividuales contadorIndividual = other.GetComponent<ContadorMonedasIndividuales>();
+                if (contadorIndividual != null)
+                {
+                    contadorIndividual.IncrementarMoneda(gameObject.tag); // Usa el tag como identificador
+                }
+    */
+
+
             //llamado del script ContadorMoneda por medio de su instancia para ejecutar el metodo incrementar moneda
             contadorMonedasGeneral.instanciaContadorGeneral.IncrementarMoneda(5);
 
