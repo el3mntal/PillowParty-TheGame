@@ -5,9 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Trampolin
+
   - Oro
   - Plata
   - Cobre
+
   layers:
   - Default
   - TransparentFX
