@@ -5,9 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Trampolin
-  - moneda dorada
-  - moneda plata
-  - moneda cobre
+
+  - Oro
+  - Plata
+  - Cobre
+
   layers:
   - Default
   - TransparentFX

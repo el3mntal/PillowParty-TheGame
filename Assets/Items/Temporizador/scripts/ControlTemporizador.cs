@@ -14,6 +14,10 @@ public class ControlTemporizador : MonoBehaviour
     //indica si el temporizador esta en marcha
     private bool enMarchaTiempo;
 
+    //---- Evento para avisar cuando el temporizador llega a 0----
+    public delegate void TemporizadorFinalizado();
+    public static event TemporizadorFinalizado OnTemporizadorFinalizado;
+
     private void Awake()
     {
         restanteTiempo = (min * cantidadTiempoTemp) + seg;
@@ -29,17 +33,15 @@ public class ControlTemporizador : MonoBehaviour
             restanteTiempo -= Time.deltaTime;
         }
 
-        // Detener el temporizador cuando llegue a 0 segundos //---C---
+        // Detener el temporizador cuando llegue a 0 segundos
         if (restanteTiempo <= 0)
         {
-            restanteTiempo = 0;  // Evita que el tiempo sea negativo //---C---
-            enMarchaTiempo = false; // Pausar el temporizador //---C---
+            restanteTiempo = 0;  // Evita que el tiempo sea negativo
+            enMarchaTiempo = false; // Pausar el temporizador
+
+            //COPILOT: Disparar el evento para avisar que el temporizador finalizó
+            OnTemporizadorFinalizado?.Invoke();
         }
-        /*
-        if (enMarchaTiempo)
-        {
-            restanteTiempo -= Time.deltaTime;
-        }*/
 
         // Eliminación de la variable de minutos, ahora solo se usan los segundos restantes
         int tempSeg = Mathf.FloorToInt(restanteTiempo);
@@ -48,9 +50,3 @@ public class ControlTemporizador : MonoBehaviour
         tiempoRegresivo.text = string.Format("{0}", tempSeg);
     }
 }
-
-//calculo de tiempo restante al dividir minutos y segundos
-//int tempMin = Mathf.FloorToInt(restanteTiempo / cantidadTiempoTemp);
-//int tempSeg = Mathf.FloorToInt(restanteTiempo % cantidadTiempoTemp);
-//se actualiza el tiempo y se presenta en viewport
-//tiempoRegresivo.text = string.Format("{0}:{1}", tempMin, tempSeg);
