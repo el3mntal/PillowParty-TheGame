@@ -8,6 +8,8 @@ TagManager:
   - Oro
   - Plata
   - Cobre
+  - PuntajeFinal
+  - InterfazGrafica
   layers:
   - Default
   - TransparentFX

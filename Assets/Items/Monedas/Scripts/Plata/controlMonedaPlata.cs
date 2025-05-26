@@ -9,10 +9,14 @@ public class controlMonedaPlata : MonoBehaviour
     private Vector3 antiguaPosicionMoneda;
     private Animator animacionMoneda;
 
+
+
     // Referencia al AudioSource del Object Empty //--copilot--
     private AudioSource audioSource;
 
     public AudioClip sonidoMoneda; // Agrega un AudioClip en el Inspector de Unity //--copilot--
+
+
 
     void Start()
     {
