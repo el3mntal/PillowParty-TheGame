@@ -10,7 +10,11 @@ public class ControlTemporizador : MonoBehaviour
     [SerializeField] Text tiempoRegresivo;
 
     private float cantidadTiempoTemp = 60;
-    private float restanteTiempo;
+    public float restanteTiempo;
+
+    // Agrega este getter público
+    public float RestanteTiempo => restanteTiempo;
+
     //indica si el temporizador esta en marcha
     private bool enMarchaTiempo;
 
