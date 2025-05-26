@@ -567,7 +567,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &167711601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3091,7 +3091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   min: 0
-  seg: 10
+  seg: 7
   tiempoRegresivo: {fileID: 1779499700}
   restanteTiempo: 0
 --- !u!1 &794871619
@@ -3750,7 +3750,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A
+  m_text: FFG
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a5d2d49586a4ba74c8a46e99325018c8, type: 2}
   m_sharedMaterial: {fileID: 567793291042829460, guid: a5d2d49586a4ba74c8a46e99325018c8, type: 2}
@@ -5453,7 +5453,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Descripcion prueba
+  m_text: Prueba Script
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a5d2d49586a4ba74c8a46e99325018c8, type: 2}
   m_sharedMaterial: {fileID: 567793291042829460, guid: a5d2d49586a4ba74c8a46e99325018c8, type: 2}
