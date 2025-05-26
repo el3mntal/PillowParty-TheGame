@@ -9,11 +9,20 @@ public class controlMonedaOro : MonoBehaviour
     private Vector3 antiguaPosicionMoneda;
     private Animator animacionMoneda;
 
+
+    // Referencia al AudioSource del Object Empty //--copilot--
+    private AudioSource audioSource;
+
+    public AudioClip sonidoMoneda; // Agrega un AudioClip en el Inspector de Unity //--copilot--
     void Start()
     {
         animacionMoneda = this.GetComponent<Animator>();
         antiguaPosicionMoneda = transform.localPosition;
         //antiguaPosicionMoneda = transform.position;
+
+
+        // Encuentra el AudioSource dentro del Object Empty (padre) //--copilot--
+        audioSource = GetComponentInParent<AudioSource>();
     }
     // Update is called once per frame
     void Update()
@@ -26,7 +35,11 @@ public class controlMonedaOro : MonoBehaviour
         //comprobacion de colision unicamente con objeto con tag Player
         if (other.CompareTag("Player"))
         {
-
+            // Reproducir sonido de la moneda //--copilot--
+            if (audioSource != null && sonidoMoneda != null)
+            {
+                audioSource.PlayOneShot(sonidoMoneda); //--copilot--
+            }
 
 
 
