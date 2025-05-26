@@ -10,8 +10,27 @@ public class MovimientoAutomaticoCobre : MonoBehaviour
 
     private int direccion = 1; // 1 para arriba, -1 para abajo
 
+    private bool detenerMovimiento = false; //---C--- Variable para detener el movimiento
+
+    private void OnEnable()
+    {
+        ControlTemporizador.OnTemporizadorFinalizado += DetenerMovimiento; //---C---
+    }
+
+    private void OnDisable()
+    {
+        ControlTemporizador.OnTemporizadorFinalizado -= DetenerMovimiento; //---C---
+    }
+
+    private void DetenerMovimiento()
+    {
+        detenerMovimiento = true; //---C---
+    }
+
     void Update()
     {
+        if (detenerMovimiento) return; //---C---
+
         transform.position += Vector3.up * direccion * velocidad * Time.deltaTime;
 
         if (transform.position.y >= limiteArriba)

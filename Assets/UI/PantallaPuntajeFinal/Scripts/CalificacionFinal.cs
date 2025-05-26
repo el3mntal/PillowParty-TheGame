@@ -17,27 +17,33 @@ public class CalificacionFinal : MonoBehaviour
         ControlTemporizador.OnTemporizadorFinalizado -= MostrarLetraFinal;
     }
 
-    void MostrarLetraFinal()
+    public void MostrarLetraFinal()
     {
+
+        int puntos = PlayerPrefs.GetInt("PuntuacionFinal", 0); //--COPILOT (Recuperar puntuación)
+        textoPuntuacionFinal.text = DeterminarLetra(puntos);
+
+        /*
         contadorMonedasGeneral contadorGeneral = FindObjectOfType<contadorMonedasGeneral>();
+                if (contadorGeneral != null)
+                {
+                    string letraFinal = DeterminarLetra(contadorGeneral.numeroMonedas);
+                    textoPuntuacionFinal.text = letraFinal;
+                }
+            }
+            */
 
-        if (contadorGeneral != null)
+        //COPILOT: Método para asignar la letra según la puntuación
+        string DeterminarLetra(int puntos)
         {
-            string letraFinal = DeterminarLetra(contadorGeneral.numeroMonedas);
-            textoPuntuacionFinal.text = letraFinal;
+            if (puntos >= 30)
+                return "S";
+            else if (puntos >= 20)
+                return "B";
+            else if (puntos >= 10)
+                return "F";
+            else
+                return "-"; // Si no alcanza los 10 puntos, muestra un guion o cualquier otra indicación
         }
-    }
-
-    //COPILOT: Método para asignar la letra según la puntuación
-    string DeterminarLetra(int puntos)
-    {
-        if (puntos >= 30)
-            return "S";
-        else if (puntos >= 20)
-            return "B";
-        else if (puntos >= 10)
-            return "F";
-        else
-            return "-"; // Si no alcanza los 10 puntos, muestra un guion o cualquier otra indicación
     }
 }
