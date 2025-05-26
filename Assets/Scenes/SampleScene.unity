@@ -779,6 +779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee2c27995bd329e4687390a778a0bd93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!4 &170138102 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d23ed5d996f15c34295750916ea89f80, type: 3}
@@ -1270,6 +1271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee2c27995bd329e4687390a778a0bd93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!4 &245104847 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d23ed5d996f15c34295750916ea89f80, type: 3}
@@ -1826,6 +1828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc738fbd89f84d04c9a6f10ef5476bb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!4 &445386139 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d23ed5d996f15c34295750916ea89f80, type: 3}
@@ -1956,6 +1959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee2c27995bd329e4687390a778a0bd93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!4 &588860887 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d23ed5d996f15c34295750916ea89f80, type: 3}
@@ -2251,6 +2255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc738fbd89f84d04c9a6f10ef5476bb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!4 &649544490 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d23ed5d996f15c34295750916ea89f80, type: 3}
@@ -2381,6 +2386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a805eecd0a4e2c47840f6d9466fdc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!4 &654466497 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d23ed5d996f15c34295750916ea89f80, type: 3}
@@ -2436,7 +2442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.8666667}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2586,6 +2592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a805eecd0a4e2c47840f6d9466fdc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!4 &686530566 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d23ed5d996f15c34295750916ea89f80, type: 3}
@@ -2966,7 +2973,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1119834522}
-  - {fileID: 1836136930}
   - {fileID: 291179543}
   - {fileID: 332856266}
   - {fileID: 120030203}
@@ -3529,6 +3535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a805eecd0a4e2c47840f6d9466fdc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!4 &873465143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d23ed5d996f15c34295750916ea89f80, type: 3}
@@ -3850,8 +3857,8 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.16264686, g: 0.3660908, b: 0.4056604, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4063,6 +4070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee2c27995bd329e4687390a778a0bd93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!4 &1042325969 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d23ed5d996f15c34295750916ea89f80, type: 3}
@@ -4230,7 +4238,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1836136930}
   m_Father: {fileID: 716294610}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -4582,6 +4591,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1215045182}
   - component: {fileID: 1215045183}
+  - component: {fileID: 1215045184}
   m_Layer: 0
   m_Name: MonedasPlata
   m_TagString: Untagged
@@ -4626,6 +4636,102 @@ MonoBehaviour:
   velocidad: 30
   limiteDerecha: -230
   limiteIzquierda: -306
+--- !u!82 &1215045184
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215045181}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1.1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1261397113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4751,6 +4857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee2c27995bd329e4687390a778a0bd93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!4 &1261397117 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d23ed5d996f15c34295750916ea89f80, type: 3}
@@ -4881,6 +4988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a805eecd0a4e2c47840f6d9466fdc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!4 &1268293572 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d23ed5d996f15c34295750916ea89f80, type: 3}
@@ -5242,6 +5350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee2c27995bd329e4687390a778a0bd93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!65 &1404385683
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5541,6 +5650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee2c27995bd329e4687390a778a0bd93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!4 &1473932509 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d23ed5d996f15c34295750916ea89f80, type: 3}
@@ -5748,6 +5858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a805eecd0a4e2c47840f6d9466fdc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!65 &1606272979
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5918,6 +6029,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1658622912}
   - component: {fileID: 1658622913}
+  - component: {fileID: 1658622914}
   m_Layer: 0
   m_Name: MonedasOro
   m_TagString: Untagged
@@ -5958,6 +6070,102 @@ MonoBehaviour:
   velocidad: 50
   limiteDerecha: -60
   limiteIzquierda: -300
+--- !u!82 &1658622914
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658622911}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 0
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1727541662
 GameObject:
   m_ObjectHideFlags: 0
@@ -6429,6 +6637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc738fbd89f84d04c9a6f10ef5476bb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!65 &1780306632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6713,6 +6922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a805eecd0a4e2c47840f6d9466fdc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!4 &1832900551 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d23ed5d996f15c34295750916ea89f80, type: 3}
@@ -6743,16 +6953,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1836136929}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.00001073289}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 716294610}
+  m_Father: {fileID: 1119834522}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 77.30002, y: -477.1}
+  m_AnchoredPosition: {x: 82.9, y: -90.74}
   m_SizeDelta: {x: 220, y: 36.4}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1836136931
@@ -7111,6 +7321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a805eecd0a4e2c47840f6d9466fdc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!4 &1844172851 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d23ed5d996f15c34295750916ea89f80, type: 3}
@@ -7126,6 +7337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1921925812}
   - component: {fileID: 1921925813}
+  - component: {fileID: 1921925814}
   m_Layer: 0
   m_Name: MonedasCobre
   m_TagString: Untagged
@@ -7172,6 +7384,102 @@ MonoBehaviour:
   velocidad: 20
   limiteArriba: 280
   limiteAbajo: 250
+--- !u!82 &1921925814
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921925811}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.2
+  m_Pitch: 0.8
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 229
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1927504829 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cc7ef0e92231b93478924b5ce356066d, type: 3}
@@ -7328,6 +7636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a805eecd0a4e2c47840f6d9466fdc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!4 &1929898840 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d23ed5d996f15c34295750916ea89f80, type: 3}
@@ -7783,6 +8092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a805eecd0a4e2c47840f6d9466fdc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8300000, guid: 7e3d6b9952c76084ba28b443cd13f9af, type: 3}
 --- !u!4 &2021727296 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d23ed5d996f15c34295750916ea89f80, type: 3}
@@ -8119,8 +8429,8 @@ SceneRoots:
   - {fileID: 701543961}
   - {fileID: 854017467}
   - {fileID: 1658622912}
-  - {fileID: 1921925812}
   - {fileID: 1215045182}
+  - {fileID: 1921925812}
   - {fileID: 1339950637}
   - {fileID: 716294610}
   - {fileID: 1972475334}
