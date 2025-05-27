@@ -36,11 +36,11 @@ public class DescripcionCalificacionPuntaje : MonoBehaviour
     //COPILOT: Método para asignar la descripción según la puntuación
     string DeterminarDescripcion(int puntos)
     {
-        if (puntos >= 30)
+        if (puntos >= 75)
             return "¡Puntuación Perfecta!";
-        else if (puntos >= 20)
+        else if (puntos >= 60)
             return "Nada mal, aprendes rápido.";
-        else if (puntos >= 10)
+        else if (puntos >= 30)
             return "¡Vamos! puedes hacerlo mejor.";
         else
             return "Sigue intentándolo, ¡tú puedes!";

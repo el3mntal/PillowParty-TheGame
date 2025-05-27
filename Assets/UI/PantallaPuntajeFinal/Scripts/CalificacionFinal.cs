@@ -36,14 +36,15 @@ public class CalificacionFinal : MonoBehaviour
         //COPILOT: Método para asignar la letra según la puntuación
         string DeterminarLetra(int puntos)
         {
-            if (puntos >= 30)
+            if (puntos >= 75)
                 return "S";
-            else if (puntos >= 20)
+            else if (puntos >= 60)
                 return "B";
-            else if (puntos >= 10)
+            else if (puntos >= 30)
                 return "F";
             else
-                return "-"; // Si no alcanza los 10 puntos, muestra un guion o cualquier otra indicación
+                return ":("; // Si no alcanza los 10 puntos, muestra un guion o cualquier otra indicación
+
         }
     }
 }
