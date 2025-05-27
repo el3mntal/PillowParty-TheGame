@@ -10,9 +10,28 @@ public class MovimientoAutomaticoOro : MonoBehaviour
 
     private int direccion = 1; // 1 para derecha, -1 para izquierda
 
+    private bool detenerMovimiento = false; //---C---
+
+    private void OnEnable()
+    {
+        ControlTemporizador.OnTemporizadorFinalizado += DetenerMovimiento; //---C---
+    }
+
+    private void OnDisable()
+    {
+        ControlTemporizador.OnTemporizadorFinalizado -= DetenerMovimiento; //---C---
+    }
+
+    private void DetenerMovimiento()
+    {
+        detenerMovimiento = true; //---C---
+    }
+
     // Update is called once per frame
     void Update()
     {
+
+        if (detenerMovimiento) return; //---C---
         transform.position += Vector3.forward * direccion * velocidad * Time.deltaTime;
 
         if (transform.position.z >= limiteDerecha)

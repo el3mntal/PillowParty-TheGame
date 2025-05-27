@@ -20,6 +20,9 @@ public class controlPersonaje : MonoBehaviour
     //Trampolin
     private float fuerzaTrampolin = 250f;
 
+    //CongelarPersonaje
+    private bool congelado = false; //--C-- Nueva variable para congelar el personaje cuando el temporizador llegue a cero.
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,17 +32,28 @@ public class controlPersonaje : MonoBehaviour
 
         //Restriccion de FPS
         Application.targetFrameRate = 30;
+
+        // Suscribirse al evento de temporizador
+        ControlTemporizador.OnTemporizadorFinalizado += CongelarPersonaje; //--C--
     }
 
     // Update is called once per frame
     void Update()
     {
-        MoverPersonaje();
+        if (!congelado) //--C-- Si el personaje no está congelado, permitir movimiento.
+        {
+            MoverPersonaje();
+        }
     }
 
     //Metodo Personaje
     void MoverPersonaje()
     {
+        if (PausaC.Pausa || congelado) //--C-- Verificar si el juego está en pausa o congelado.
+        {
+            return;
+        }
+
         //condicional para detener el personaje
         if (PausaC.Pausa == true)
         {
@@ -104,4 +118,20 @@ public class controlPersonaje : MonoBehaviour
         }
     }
 
+    void CongelarPersonaje() //--C-- Método para congelar al personaje cuando el temporizador llegue a cero.
+    {
+        congelado = true;
+        animacionPersonaje.SetBool("Aterrizar", true); //--C-- Mantener animación aterrizado.
+        movimientoDireccion = Vector3.zero; //--C-- Detener el movimiento completamente.
+    }
+
+    void OnDestroy()
+    {
+        // Desuscribirse del evento para evitar errores al destruir el objeto
+        ControlTemporizador.OnTemporizadorFinalizado -= CongelarPersonaje; //--C--
+    }
+
 }
+
+
+

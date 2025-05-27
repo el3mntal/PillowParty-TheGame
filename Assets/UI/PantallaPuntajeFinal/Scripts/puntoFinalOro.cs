@@ -17,7 +17,7 @@ public class puntoFinalOro : MonoBehaviour
         ControlTemporizador.OnTemporizadorFinalizado -= ActualizarTextoFinal;
     }
 
-    void ActualizarTextoFinal()
+    public void ActualizarTextoFinal()
     {
         ContadorMonedasIndividuales contadorIndividual = FindObjectOfType<ContadorMonedasIndividuales>();
         if (contadorIndividual != null)

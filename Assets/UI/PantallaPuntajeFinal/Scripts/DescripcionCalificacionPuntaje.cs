@@ -17,8 +17,12 @@ public class DescripcionCalificacionPuntaje : MonoBehaviour
         ControlTemporizador.OnTemporizadorFinalizado -= MostrarDescripcionFinal;
     }
 
-    void MostrarDescripcionFinal()
+    public void MostrarDescripcionFinal()
     {
+        int puntos = PlayerPrefs.GetInt("PuntuacionFinal", 0); //--COPILOT (Recuperar puntuación)
+        textoDescripcionFinal.text = DeterminarDescripcion(puntos);
+
+        /*
         contadorMonedasGeneral contadorGeneral = FindObjectOfType<contadorMonedasGeneral>();
 
         if (contadorGeneral != null)
@@ -26,6 +30,7 @@ public class DescripcionCalificacionPuntaje : MonoBehaviour
             string descripcionFinal = DeterminarDescripcion(contadorGeneral.numeroMonedas);
             textoDescripcionFinal.text = descripcionFinal;
         }
+        */
     }
 
     //COPILOT: Método para asignar la descripción según la puntuación
