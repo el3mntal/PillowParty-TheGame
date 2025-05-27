@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ControlTemporizador : MonoBehaviour
 {
     //variables que almacenas los minutos y segundos (serialize) permite la modificacion en unity
-    [SerializeField] int min, seg = 20;
+    [SerializeField] int min, seg = 45;
     [SerializeField] Text tiempoRegresivo;
 
     private float cantidadTiempoTemp = 60;

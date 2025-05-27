@@ -3142,6 +3142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   min: 0
   seg: 10
+  seg: 45
   tiempoRegresivo: {fileID: 1779499700}
 --- !u!1 &794871619
 GameObject:

@@ -25,6 +25,14 @@ public class CalificacionFinal : MonoBehaviour
         {
             string letraFinal = DeterminarLetra(contadorGeneral.numeroMonedas);
             textoPuntuacionFinal.text = letraFinal;
+            if (puntos >= 75)
+                return "S";
+            else if (puntos >= 60)
+                return "B";
+            else if (puntos >= 30)
+                return "F";
+            else
+                return ":("; // Si no alcanza los 10 puntos, muestra un guion o cualquier otra indicación
         }
     }
 
